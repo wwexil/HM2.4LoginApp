@@ -14,6 +14,9 @@
 		22B26022277B572A007D6697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B26021277B572A007D6697 /* Assets.xcassets */; };
 		22B26025277B572A007D6697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B26023277B572A007D6697 /* LaunchScreen.storyboard */; };
 		22B2602D277B5904007D6697 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B2602C277B5904007D6697 /* WelcomeViewController.swift */; };
+		22B2605D277CB15E007D6697 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B2605C277CB15E007D6697 /* User.swift */; };
+		22B2605F277CB72E007D6697 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B2605E277CB72E007D6697 /* UserInfoViewController.swift */; };
+		22B26061277CB79C007D6697 /* UserGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B26060277CB79C007D6697 /* UserGoalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		22B26024277B572A007D6697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22B26026277B572A007D6697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22B2602C277B5904007D6697 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		22B2605C277CB15E007D6697 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		22B2605E277CB72E007D6697 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		22B26060277CB79C007D6697 /* UserGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGoalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,59 @@
 		22B26017277B5729007D6697 /* HM2.3LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				22B26018277B5729007D6697 /* AppDelegate.swift */,
-				22B2601A277B5729007D6697 /* SceneDelegate.swift */,
-				22B2601C277B5729007D6697 /* LoginViewController.swift */,
-				22B2601E277B5729007D6697 /* Main.storyboard */,
-				22B2602C277B5904007D6697 /* WelcomeViewController.swift */,
-				22B26021277B572A007D6697 /* Assets.xcassets */,
-				22B26023277B572A007D6697 /* LaunchScreen.storyboard */,
-				22B26026277B572A007D6697 /* Info.plist */,
+				22B26057277CADC0007D6697 /* ViewControllers */,
+				22B26058277CADD9007D6697 /* Models */,
+				22B2605B277CAE24007D6697 /* Storyboards */,
+				22B26059277CADEF007D6697 /* App */,
+				22B2605A277CADFD007D6697 /* Resourses */,
 			);
 			path = HM2.3LoginApp;
+			sourceTree = "<group>";
+		};
+		22B26057277CADC0007D6697 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				22B2601C277B5729007D6697 /* LoginViewController.swift */,
+				22B2602C277B5904007D6697 /* WelcomeViewController.swift */,
+				22B2605E277CB72E007D6697 /* UserInfoViewController.swift */,
+				22B26060277CB79C007D6697 /* UserGoalViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		22B26058277CADD9007D6697 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22B2605C277CB15E007D6697 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		22B26059277CADEF007D6697 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				22B26018277B5729007D6697 /* AppDelegate.swift */,
+				22B2601A277B5729007D6697 /* SceneDelegate.swift */,
+				22B26026277B572A007D6697 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		22B2605A277CADFD007D6697 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				22B26021277B572A007D6697 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		22B2605B277CAE24007D6697 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				22B2601E277B5729007D6697 /* Main.storyboard */,
+				22B26023277B572A007D6697 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B26061277CB79C007D6697 /* UserGoalViewController.swift in Sources */,
 				22B2601D277B5729007D6697 /* LoginViewController.swift in Sources */,
+				22B2605F277CB72E007D6697 /* UserInfoViewController.swift in Sources */,
 				22B2602D277B5904007D6697 /* WelcomeViewController.swift in Sources */,
 				22B26019277B5729007D6697 /* AppDelegate.swift in Sources */,
+				22B2605D277CB15E007D6697 /* User.swift in Sources */,
 				22B2601B277B5729007D6697 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +346,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HM2.3LoginApp/Info.plist;
+				INFOPLIST_FILE = HM2.3LoginApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,7 +374,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HM2.3LoginApp/Info.plist;
+				INFOPLIST_FILE = HM2.3LoginApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
